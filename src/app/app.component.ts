@@ -10,10 +10,10 @@ export class AppComponent {
   title = "Angular 2 member names";
   members = [
     new Member(1, "Odyssefs", "Aristeidou"),
-    new Member(1, "Mohamed", "Asfour"),
-    new Member(1, "Thomas", "Holubar"),
-    new Member(1, "Tamara", ""),
-    new Member(1, "Felipe", "Holeen"),
+    new Member(2, "Mohamed", "Asfour"),
+    new Member(3, "Thomas", "Holubar"),
+    new Member(4, "Tamara", ""),
+    new Member(5, "Felipe", "Holeen"),
   ];
   person = this.members[0];
 }
