@@ -1,3 +1,10 @@
-<h1>
-  {{title}}
-</h1>
+<h1>{{title}}</h1>
+<h2>My name is: {{person}}</h2>
+
+<p>Members:</p>
+
+<ul>
+  <li *ngFor="let member of members">
+    {{member}}
+  </li>
+</ul>
