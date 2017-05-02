@@ -15,5 +15,5 @@ export class AppComponent {
     new Member(4, "Tamara", ""),
     new Member(5, "Felipe", "Holeen"),
   ];
-  person = this.members[0];
+  member = this.members[0];
 }
