@@ -8,3 +8,6 @@
     {{member.firstname}} {{member.lastname}}
   </li>
 </ul>
+
+<p *ngIf="members.length==1">There are {{members.length}} member!</p>
+<p *ngIf="members.length>2">There are {{members.length}} members</p>
