@@ -18,8 +18,13 @@ export class AppComponent {
   member = this.members[0];
 
   clickMessage = '';
-
   onClickButton() {
     this.clickMessage = "You have clicked me! This is fun!";
   }
+
+  eventValue = '';
+  onKeyEventValue(event) {
+    this.eventValue += event.target.value + " | ";
+  }
+
 }

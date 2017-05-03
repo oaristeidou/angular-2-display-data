@@ -12,5 +12,10 @@
 <p *ngIf="members.length==1">There are {{members.length}} member!</p>
 <p *ngIf="members.length>2">There are {{members.length}} members</p>
 
-<button (click)='onClickButton()'>Shoot it</button>
+<button (click)='onClickButton()'>Shoot it!</button>
 {{clickMessage}}
+
+<br><br>
+<label>Key Input</label>
+<input (keyup)='onKeyEventValue($event)'/>
+<p>{{eventValue}}</p>
