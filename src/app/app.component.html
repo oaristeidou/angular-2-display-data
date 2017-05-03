@@ -22,5 +22,9 @@
 
 <br><br>
 <label>Template reference variable</label>
-<input #refValue (keyup.enter)="onKeyUpEnter(refValue.value)"/>
+<input #refValue
+       (keyup.enter)="onKeyUpEnter(refValue.value)"
+       (blur)="onKeyUpEnter(refValue.value)"
+
+/>
 <p>{{value}}</p>
