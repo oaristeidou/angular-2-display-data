@@ -22,9 +22,9 @@ export class AppComponent {
     this.clickMessage = "You have clicked me! This is fun!";
   }
 
-  eventValue = '';
-  onKeyEventValue(event) {
-    this.eventValue += event.target.value + " | ";
+  value = '';
+  onKeyUpEnter(value: string) {
+    this.value = value;
   }
 
 }
