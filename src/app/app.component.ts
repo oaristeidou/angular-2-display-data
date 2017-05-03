@@ -16,4 +16,10 @@ export class AppComponent {
     new Member(5, "Felipe", "Holeen"),
   ];
   member = this.members[0];
+
+  clickMessage = '';
+
+  onClickButton() {
+    this.clickMessage = "You have clicked me! This is fun!";
+  }
 }
