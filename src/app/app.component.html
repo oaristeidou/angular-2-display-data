@@ -19,3 +19,8 @@
 <label>Key Input</label>
 <input (keyup)='onKeyEventValue($event)'/>
 <p>{{eventValue}}</p>
+
+<br><br>
+<label>Template reference variable</label>
+<input #refValue (keyup)='0'/>
+<p>{{refValue.value}}</p>
