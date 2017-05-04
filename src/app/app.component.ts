@@ -18,13 +18,16 @@ export class AppComponent {
   member = this.members[0];
 
   clickMessage = '';
-  onClickButton() {
-    this.clickMessage = "You have clicked me! This is fun!";
+  index = 5;
+  onClickButton(value: string) {
+    if (value)
+      this.members.push(new Member(this.index++, value, ""));
   }
 
   value = '';
   onKeyUpEnter(value: string) {
-    this.value = value;
+    if (value)
+      this.members.push(new Member(this.index++, value, ""));
   }
 
 }

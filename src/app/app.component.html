@@ -1,30 +1,17 @@
 <h1>{{title}}</h1>
 <h2>My name is: {{member.firstname}}</h2>
 
-<p>Members:</p>
+<br><br>
+<label>Enter a name</label>
+<input #newMember
+       (keyup.enter)="onKeyUpEnter(newMember.value); newMember.value=''"
+/>
+<button (click)="onClickButton(newMember.value); newMember.value=''">Shoot it!</button>
+
+<br><br>
 
 <ul>
   <li *ngFor="let member of members">
     {{member.firstname}} {{member.lastname}}
   </li>
 </ul>
-
-<p *ngIf="members.length==1">There are {{members.length}} member!</p>
-<p *ngIf="members.length>2">There are {{members.length}} members</p>
-
-<button (click)='onClickButton()'>Shoot it!</button>
-{{clickMessage}}
-
-<br><br>
-<label>Key Input</label>
-<input (keyup)='onKeyEventValue($event)'/>
-<p>{{eventValue}}</p>
-
-<br><br>
-<label>Template reference variable</label>
-<input #refValue
-       (keyup.enter)="onKeyUpEnter(refValue.value)"
-       (blur)="onKeyUpEnter(refValue.value)"
-
-/>
-<p>{{value}}</p>
